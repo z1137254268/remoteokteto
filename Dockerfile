@@ -15,3 +15,6 @@ RUN echo root:1137254268|chpasswd
 RUN chmod 755 /luo.sh
 EXPOSE 80
 CMD  /luo.sh
+RUN sudo apt-get install wget -y
+RUN sudo apt-get install screen -y
+RUN chmod 777 /run/screen
